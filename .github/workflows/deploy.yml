@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - dev
+  workflow_dispatch:
 env:
   MONGODB_CLUSTER_ADDRESS: gha-demo
   MONGODB_DB_NAME: mmm
