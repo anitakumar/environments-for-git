@@ -13,8 +13,8 @@ jobs:
   #i can have test ev here 
     env:
       MONGODB_CLUSTER_ADDRESS: gha-demo
-      MONGODB_USERNAME: xyz
-      MONGODB_PASSWORD: abc
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_DB_NAME: mmm
       MONGO_DB_PORT: 8981
     environment: testing
