@@ -34,8 +34,8 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Output information
-        run: echo "MONDODB_USERNAME: {{env.MONGO_DB_USERNAME}}" #Not available
-        run: echo "MONDODB_USERNAME: {{env.MONGO_DB_NAME}}" # is available
+        run: echo "MONDODB_USERNAME: {{ env.MONGO_DB_USERNAME }}" #Not available
+        run: echo "MONDODB_USERNAME: {{ env.MONGO_DB_NAME }}" # is available
   deploy:
     needs: test
     runs-on: ubuntu-latest
